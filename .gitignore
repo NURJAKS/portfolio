@@ -1,0 +1,90 @@
+# Dependencies
+node_modules/
+.cursor/
+
+# Build outputs
+dist/
+build/
+.output/
+.cache/
+.next/
+out/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.history/
+*.log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Cloudflare
+.wrangler/
+.dev.vars
+wrangler.toml.local
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.iso
+
+# Coverage and testing
+coverage/
+.nyc_output/
+*.lcov
+
+# AI Agent files
+.agent/
+.gemini/
+.antigravity/
+
+# Backup files
+*.orig
+*.rej
+
+# Local development
+.local
+*.log
+.DS_Store
+node_modules/
+dist/
+build/
+.vercel
+.netlify
