@@ -16,6 +16,7 @@ out/
 .env.*.local
 .env.production
 .env.development
+*.local
 
 .vscode/
 .idea/
