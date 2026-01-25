@@ -232,7 +232,7 @@ const translations = {
       phone: 'ТЕЛЕФОН'
     },
     meta: {
-      title: 'Zodtech — IT-шешімдерді әзірлейміз: сайттар, қосымшалар және AI агенттер',
+      title: 'Жаса. Дамыт. Бизнесті өсір. | Zodtech',
       description: 'Бизнеске арналған жоғары жүктелген сайттар, мобильді қосымшалар және AI-агенттерді әзірлеу. Толық цикл: MVP-ден масштабтауға дейін. Консультацияға тапсырыс беріңіз!'
     }
   },
@@ -467,7 +467,7 @@ const translations = {
       phone: 'ТЕЛЕФОН'
     },
     meta: {
-      title: 'Zodtech — Разработка IT-решений: сайты, приложения и AI агенты',
+      title: 'Создавай. Масштабируй. Развивай бизнес. | Zodtech',
       description: 'Разработка высоконагруженных сайтов, мобильных приложений и AI-агентов для бизнеса. Полный цикл: от MVP до масштабирования. Закажите консультацию!'
     }
   },
@@ -712,17 +712,59 @@ const LanguageManager = {
   currentLang: 'ru',
 
   init() {
-    // Загружаем сохраненный язык или определяем по браузеру
-    const savedLang = localStorage.getItem('siteLang');
-    const browserLang = navigator.language.split('-')[0];
+    // 1. Determine Browser Language
+    const browserLangFull = navigator.language.toLowerCase();
+    const browserLang = browserLangFull.split('-')[0];
 
-    if (savedLang && ['kz', 'ru', 'en'].includes(savedLang)) {
+    // 2. Localized Titles Map (Native Language Titles)
+    const localizedTitles = {
+      'ru': 'Создавай. Масштабируй. Развивай бизнес. | Zodtech',
+      'kz': 'Жаса. Дамыт. Бизнесті өсір. | Zodtech',
+      'kk': 'Жаса. Дамыт. Бизнесті өсір. | Zodtech',
+      'en': 'Build. Scale. Drive. | Zodtech',
+      'us': 'Build. Scale. Drive. | Zodtech',
+      'gb': 'Build. Scale. Drive. | Zodtech',
+      'uz': 'Yarat. Kengayt. Rivojlantir. | Zodtech',
+      'ky': 'Жарат. Кеңейт. Өнүктүр. | Zodtech',
+      'kg': 'Жарат. Кеңейт. Өнүктүр. | Zodtech',
+      'ko': '구축. 확장. 성장. | Zodtech', // Korean
+      'ar': 'ابنِ. توسع. انطلق. | Zodtech', // Arabic
+    };
+
+    // 3. Logic: Saved Lang vs Auto-Detect
+    const savedLang = localStorage.getItem('siteLang');
+
+    if (savedLang && translations[savedLang]) {
+      // CASE A: User previously selected a language -> Respect it fully
       this.currentLang = savedLang;
-    } else if (['kz', 'ru', 'en'].includes(browserLang)) {
-      this.currentLang = browserLang;
+      this.applyLanguage(this.currentLang);
+    } else {
+      // CASE B: First visit (or no saved lang) -> Smart Auto-Detect
+
+      // B1. Determine Content Language Fallback
+      // Default to 'en'
+      let contentLang = 'en';
+
+      // If browser is RU/KZ/EN -> use that
+      if (['ru', 'kz', 'en'].includes(browserLang)) {
+        contentLang = browserLang;
+      }
+      // Specific CIS fallbacks to RU (common preference)
+      else if (['uz', 'ky', 'kg', 'be', 'uk'].includes(browserLang)) {
+        contentLang = 'ru';
+      }
+
+      this.currentLang = contentLang;
+      this.applyLanguage(this.currentLang);
+
+      // B2. Apply "Native Title" if available (Visual sugar)
+      // Even if content is 'en' or 'ru', if we have a title in the user's exact native language, show it.
+      // This creates a personalized feeling ("Build. Scale. Drive." in their language)
+      if (localizedTitles[browserLang]) {
+        document.title = localizedTitles[browserLang];
+      }
     }
 
-    this.applyLanguage(this.currentLang);
     this.initSwitchers();
   },
 
