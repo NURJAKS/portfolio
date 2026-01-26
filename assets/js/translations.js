@@ -131,30 +131,37 @@ const translations = {
       title: 'Тарифтер',
       quickStart: {
         name: 'Жылдам іске қосу',
+        price: 'от 25 000 ₸',
         features: ['Тапсырмаға лендинг', '5 бетке дейін', 'SEO-оптимизация', 'Қолдау 1 ай']
       },
       solution: {
         name: 'Тапсырмаға шешім',
+        price: 'от 50 000 ₸',
         features: ['Көп бетті сайт', '20 бетке дейін', 'Жақсартылған SEO-оптимизация', 'Қолдау 3 ай']
       },
       gameDev: {
         name: 'Ойындарды дамыту',
+        price: 'от 120 000 ₸',
         features: ['Орташа күрделілікті ойын жобасы', 'PC және Mobile', 'Негізгі геймплей мен визуал', 'Қолдау 1 ай']
       },
       chatbot: {
         name: 'Чат-бот',
+        price: 'от 25 000 ₸',
         features: ['Тапсырмаға бот әзірлеу', 'Telegram / WhatsApp / Web', 'Негізгі логика мен сценарийлер', 'API-ға қосылу', 'Қолдау 1 ай']
       },
       crm: {
         name: 'CRM / автоматтандыру',
-        features: ['Көп бетті сайт', '20 бетке дейін + CMS интеграциясы', 'SEO-оптимизация + Сервистерге интеграция', 'CRM баптау немесе әзірлеу', 'Рутиналық тапсырмаларды автоматтандыру', 'Қолдау 3 ай']
+        price: 'от 70 000 ₸',
+        features: ['CRM орнату және баптау', '20 бетке дейінгі сайт + CMS интеграциясы', 'Мессенджерлермен және сервистермен интеграция', 'Қарапайым тапсырмаларды автоматтандыру', 'SEO-оңтайландыру', '3 ай қолдау']
       },
       aiAssistant: {
         name: 'ЖИ көмекшісі',
-        features: ['Тапсырмаға AI-көмекші әзірлеу', 'Сайт, CRM және API-ға интеграция', 'Негізгі оқыту / баптау', '3 айға қолдау']
+        price: 'от 70 000 ₸',
+        features: ['Тапсырмаға AI-көмекші әзірлеу 24/7', 'Сайт, CRM, Telegram, WhatsApp-пен интеграция', 'Сіздің білім базаңызда оқыту', 'Базалық оқыту / баптау', '3 ай қолдау']
       },
       testing: {
         name: 'Тестілеу және аудит',
+        price: 'от 15 000 ₸',
         features: ['Сайтты ақауларға тексеру', 'Қателер мен багтарды іздеу', 'Логика мен тұрақтылықты талдау', 'Жақсарту бойынша ұсыныстар']
       },
       mvp: {
@@ -366,30 +373,37 @@ const translations = {
       title: 'Тарифы',
       quickStart: {
         name: 'Быстрый запуск',
+        price: 'от 25 000 ₸',
         features: ['Лендинг под задачу', 'До 5 страниц', 'SEO-оптимизация', 'Поддержка 1 месяц']
       },
       solution: {
         name: 'Решение под задачу',
+        price: 'от 50 000 ₸',
         features: ['Многостраничный сайт', 'До 20 страниц', 'Улучшенная SEO-оптимизация', 'Поддержка 3 месяца']
       },
       gameDev: {
         name: 'Разработка игр',
+        price: 'от 120 000 ₸',
         features: ['Игровой проект средней сложности', 'PC и Mobile', 'Основной геймплей и визуал', 'Поддержка 1 месяц']
       },
       chatbot: {
         name: 'Чат-бот',
+        price: 'от 25 000 ₸',
         features: ['Разработка бота под задачу', 'Telegram / WhatsApp / Web', 'Базовая логика и сценарии', 'Подключение к API', 'Поддержка 1 месяц']
       },
       crm: {
         name: 'CRM / автоматизация',
-        features: ['Многостраничный сайт', 'До 20 страниц + Интеграция CMS', 'SEO-оптимизация + Интеграция с сервисами', 'Настройка или разработка CRM', 'Автоматизация рутинных задач', 'Поддержка 3 месяца']
+        price: 'от 70 000 ₸',
+        features: ['Установка и настройка CRM', 'Cайт до 20 страниц + Интеграция CMS', 'Интеграция с мессенджерами и сервисами', 'Автоматизация простых задач', 'SEO-оптимизация', 'Поддержка 3 месяца']
       },
       aiAssistant: {
         name: 'ИИ ассистент',
-        features: ['Разработка AI-ассистента под задачу', 'Интеграция с сайтом, CRM и API', 'Базовое обучение / настройка', 'Поддержка 3 месяцев']
+        price: 'от 70 000 ₸',
+        features: ['Разработка AI-ассистента под задачу 24/7', 'Интеграция с сайтом, CRM, Telegram, WhatsApp', 'Обучение на вашей базе знаний', 'Базовое обучение / настройка', 'Поддержка 3 месяцев']
       },
       testing: {
         name: 'Тестирование и аудит',
+        price: 'от 15 000 ₸',
         features: ['Проверка сайта на уязвимости', 'Поиск ошибок и багов', 'Анализ логики и стабильности', 'Рекомендации по улучшению']
       },
       mvp: {
@@ -601,30 +615,37 @@ const translations = {
       title: 'Tariffs',
       quickStart: {
         name: 'Quick launch',
+        price: 'from 25 000 ₸',
         features: ['Landing page for task', 'Up to 5 pages', 'SEO optimization', 'Support 1 month']
       },
       solution: {
         name: 'Solution for task',
+        price: 'from 50 000 ₸',
         features: ['Multi-page website', 'Up to 20 pages', 'Enhanced SEO optimization', 'Support 3 months']
       },
       gameDev: {
         name: 'Game development',
+        price: 'from 120 000 ₸',
         features: ['Medium complexity game project', 'PC and Mobile', 'Core gameplay and visuals', 'Support 1 month']
       },
       chatbot: {
         name: 'Chatbot',
+        price: 'from 25 000 ₸',
         features: ['Bot development for task', 'Telegram / WhatsApp / Web', 'Basic logic and scenarios', 'API integration', 'Support 1 month']
       },
       crm: {
         name: 'CRM / automation',
-        features: ['Multi-page website', 'Up to 20 pages + CMS integration', 'SEO optimization + Service integration', 'CRM setup or development', 'Automation of routine tasks', 'Support 3 months']
+        price: 'from 70 000 ₸',
+        features: ['CRM installation and setup', 'Website up to 20 pages + CMS Integration', 'Integration with messengers and services', 'Automation of simple tasks', 'SEO optimization', 'Support 3 months']
       },
       aiAssistant: {
         name: 'AI Assistant',
-        features: ['AI assistant development for task', 'Integration with website, CRM and API', 'Basic training / setup', 'Support for 3 months']
+        price: 'from 70 000 ₸',
+        features: ['AI assistant development for task 24/7', 'Integration with website, CRM, Telegram, WhatsApp', 'Training on your knowledge base', 'Basic training / setup', 'Support 3 months']
       },
       testing: {
         name: 'Testing and audit',
+        price: 'from 15 000 ₸',
         features: ['Website vulnerability check', 'Finding errors and bugs', 'Logic and stability analysis', 'Improvement recommendations']
       },
       mvp: {

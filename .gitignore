@@ -82,10 +82,6 @@ coverage/
 
 # Local development
 .local
-*.log
-.DS_Store
-node_modules/
-dist/
-build/
 .vercel
 .netlify
+
